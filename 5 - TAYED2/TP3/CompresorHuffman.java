@@ -1,4 +1,4 @@
- import java.util.*;
+import java.util.*;
 
 //Clase que contruye el arbol de huffman y codifica el texto
  public class CompresorHuffman {
@@ -61,9 +61,11 @@
 
     //Muestra por consola los códigos Huffman generados
     public void mostrarCodigos() {
-        System.out.println("Códigos de Huffman:");
+        System.out.print("Códigos asignados a cada carácter: ");
+        List<String> partes = new ArrayList<>();
         for (Map.Entry<Character, String> entry : codigos.entrySet()) {
-            System.out.println("'" + entry.getKey() + "': " + entry.getValue());
+            partes.add("'" + entry.getKey() + "':" + entry.getValue());
         }
+        System.out.println(String.join(" | ", partes));
     }
 }
