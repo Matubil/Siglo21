@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        CompresorHuffman huffman = new CompresorHuffman();
+        CompresorHuffman huffman = new CompresorHuffman(); //Instancia del compresor
 
-        System.out.println("Ingrese el mensaje a codificar:"); //Instancia del compresor
+        System.out.println("Ingrese el mensaje a codificar:");
         String texto = sc.nextLine();
 
         huffman.construirArbol(texto); //Se construye el árbol
